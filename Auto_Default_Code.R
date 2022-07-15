@@ -94,7 +94,7 @@ corrplot(cor(auto_train[c(2,8,9,17:22,27,34:39)]))
 
 ####### Begin Modeling ##########
 
-## Randomly divide data into 70/30 train/test split:
+## Randomly divide data into 75/25 train/test split:
 smp_size <- floor(0.75 * nrow(auto_train))
 set.seed(123)
 train_index <- sample(seq_len(nrow(auto_train)), size = smp_size)
